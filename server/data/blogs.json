@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "title": "Perfect Matcha Latte at Home",
+    "slug": "perfect-matcha-latte",
+    "image": "/assets/images/blog-1.jpg",
+    "excerpt": "Tips for whisking and frothing like a pro.",
+    "date": "2025-07-01"
+  },
+  {
+    "id": 2,
+    "title": "5 Matcha Desserts",
+    "slug": "5-matcha-desserts",
+    "image": "/assets/images/blog-2.jpg",
+    "excerpt": "Cookies, cakes and more — matcha desserts to try.",
+    "date": "2025-07-10"
+  }
+]
