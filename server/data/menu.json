@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "title": "Iced Matcha Latte",
+    "img": "/assets/images/matcha-latte.png",
+    "rating": 4.9,
+    "price": 220,
+    "active": false,
+    "desc": "Creamy iced matcha with oat milk."
+  },
+  {
+    "id": 2,
+    "title": "Matcha Smoothie Bowl",
+    "img": "/assets/images/matcha-smoothie.png",
+    "rating": 5.0,
+    "price": 280,
+    "active": true,
+    "desc": "Thick smoothie bowl with fresh fruits."
+  },
+  {
+    "id": 3,
+    "title": "Matcha Cheesecake",
+    "img": "/assets/images/matcha-cheesecake.png",
+    "rating": 4.8,
+    "price": 250,
+    "active": false,
+    "desc": "Velvety cheesecake infused with ceremonial matcha."
+  }
+]
