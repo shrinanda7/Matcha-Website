@@ -2,17 +2,10 @@
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-// Init AOS animation
-AOS.init({
-    duration: 1000,
-    offset: 100,
-});
-
-
 // helper to build menu cards
 function createMenuCard(item) {
   const art = document.createElement('article');
-  art.className = 'matcha-menu__card' + (item.active ? ' active-card':'');
+  art.className = 'matcha-menu__card' + (item.active ? ' active-card' : '');
   art.innerHTML = `
     <img class="matcha-menu__card-image" src="${item.img}" alt="${item.title}"/>
     <h4 class="matcha-menu__card-title">${item.title}</h4>
@@ -41,11 +34,10 @@ async function loadMenu() {
   }
 }
 
-// subscribe form handler (if your markup uses a form tag)
 function initSubscribe() {
   const form = document.querySelector('.subscription__form');
   if (!form) return;
-  // if it's not a <form>, handle button click:
+
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
     const input = form.querySelector('input');
@@ -77,13 +69,20 @@ document.addEventListener('DOMContentLoaded', () => {
   initSubscribe();
 
   // smooth scroll for internal links
-  document.querySelectorAll('a[href^="#"]').forEach(a=>{
-    a.addEventListener('click', (e)=>{
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', (e) => {
       const target = document.querySelector(a.getAttribute('href'));
-      if(target){
+      if (target) {
         e.preventDefault();
         window.scrollTo({ top: target.offsetTop - 70, behavior: 'smooth' });
       }
     });
+  });
+
+  // ✅ Initialize animations after everything is ready
+  AOS.init({
+    duration: 1000,
+    offset: 100,
+    once: true
   });
 });
